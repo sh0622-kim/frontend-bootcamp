@@ -1,62 +1,130 @@
-.container {
-    width: 500px;
-    margin: 0 auto;
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans CJK KR';
 }
-h2 {
-    text-align: center;
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
 }
-input {
+
+.child {  
+    width: 670px;
+    height: 960px;
+    padding: 10px;
+
+    border: 1px solid #aacdff;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 72px;
+
+}
+
+.child-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.child-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+
+    color: #0068ff;
+}
+
+.placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #797979;
+}
+
+input[type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #cfcfcf;
+
+    margin-bottom: 21px;
+
     width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
+    height: 50px;
 }
-select {
+input[type="text"]:focus {
+    outline: none;
+    border-bottom: 1px solid #0068ff;
+}
+
+input[type="password"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #cfcfcf;
+
     width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
+    height: 50px;
 }
-hr {
-    border: 1px solid #000;
+input[type="password"]:focus {
+    outline: none;
+    border-bottom: 1px solid #0068ff;
 }
-input[type="submit"] {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #000;
-    color: #fff;
-}
+
 input[type="radio"] {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #000;
-    color: #fff;
+    width: 20px;
+    height: 20px;
+
+    background: #ebebeb;
+    border: 1px solid #d2d2d2;
+
+    margin-left: 30px;
+    margin-right: 5px;
 }
-button {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #000;
-    color: #fff;
-}
-select {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #000;
-    color: #fff;
-}
+
 input[type="checkbox"] {
-    width: 30%;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #000;
-    color: #fff;
+    width: 20px;
+    height: 20px;
+
+    background: #ebebeb;
+    border: 1px solid #d2d2d2;
+
+    margin-left: 30px;
+    margin-right: 5px;
 }
-input[type="radio"] {
-    width: 30%;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #000;
-    color: #fff;
+
+hr {
+    width: 100%;
+    height: 1px;
+    background: #e6e6e6;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+button {
+    background: #ffffff;
+    border: 1px solid #0068ff;
+    border-radius: 10px;
+    
+    width: 470px;
+    height: 75px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    
+    color: #0068ff;
 }

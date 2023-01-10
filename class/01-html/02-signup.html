@@ -5,28 +5,31 @@
     <link href="../02-css/02-signup.css" rel="stylesheet">
 </head>
 <br>
-    <h2>Sign up</h2>
-    <input type="text" placeholder="ID"/><br/></br/>
-    <input type="password" placeholder="Password"/><br/><br/>
-    <input type="password" placeholder="Password Confirm"/><br/><br/>
-    <input type="text" placeholder="User Name"/><br/><br/>
-    <input type="text" placeholder="Email"/><br/><br/>
-    <select>
-        <option disabled="true" selected="true">Location</option>
-        <option>Mercury</option>
-        <option>Venus</option>
-        <option>Earth</option>
-        <option>Mars</option>
-        <option>Jupiter</option>
-        <option>Saturn</option>
-        <option>Uranus</option>
-    </select><br/><br/>
-    <input type="radio" name="gender"/>female  <!-- <span>content<span/> -->
-    <input type="radio" name="gender"/>male
-    <br/><br/>
-    <input type="checkbox"/>I agree to the terms of service.<br/><br/>
-    <hr/>
-    <input type="submit" value="Sign up"/>
-    <button type="reset">Reset</button>
+    <div class="parent">
+        <div class="child">
+            <h1 class="child-title">Sign up</h1>
+            <h1 class="placeholder">* Email</h1>
+            <input type="text"/><br/>
+
+            <h1 class="placeholder">* User Name</h1>
+            <input type="text"/><br/>
+
+            <h1 class="placeholder">* Password</h1>
+            <input type="password"/><br/>
+            
+            <h1 class="placeholder">* Password Confirm</h1>
+            <input type="password"/><br/>
+
+            <div class="child-sub">
+                <input type="radio" name="gender"/>female  <!-- <span>content<span/> -->
+                <input type="radio" name="gender"/>male
+            </div>
+            <div class="child-sub">
+                <input type="checkbox"/>I agree to the terms of service.<br/>
+            </div>
+            <hr/>
+            <button>Sign up</button>
+        </div>
+    </div>
 </body>
 </html>
