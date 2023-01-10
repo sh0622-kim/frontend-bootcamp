@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    border: 3px solid red;
+
+    width: 200px;
+    height: 200px;
+
+    padding: 10px;
+    margin: 10px;
+}
